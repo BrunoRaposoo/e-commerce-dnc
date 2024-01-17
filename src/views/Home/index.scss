@@ -1,0 +1,24 @@
+@use '../../sass/variables' as *;
+
+.home {
+  margin-bottom: 40px;
+  
+  &__products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    margin-top: 96px;
+    gap: 27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {    
+    &__products{
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+    }
+  }   
+}
