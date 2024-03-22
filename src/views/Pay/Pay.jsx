@@ -18,7 +18,7 @@ const Pay = ({ data }) => {
     if (showMessage) {
       const timer = setTimeout(() => {
         setShowMessage(false)
-        window.location.href = '/home'
+        window.location.href = `/home`
       }, 2000)
       return() => clearTimeout(timer)
     }
